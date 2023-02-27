@@ -82,7 +82,7 @@ const Tr = ({ item }) => {
       </td>
       <td>{item.productName}</td>
       <td>{item.price}</td>
-      <td>{item.quantity}px</td>
+      <td>{item.quantity}</td>
       <td>
         <motion.i
           whileTap={{ scale: 1.2 }}
