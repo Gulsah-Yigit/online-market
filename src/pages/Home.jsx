@@ -13,7 +13,7 @@ import { Container, Row, Col } from "reactstrap";
 import heroImg from "../assets/images/hero-img.png";
 import ProductsList from "../components/UI/ProductsList";
 
-import counterImg from "../assets/images/counter-timer-img.png";
+import counterImg from "../assets/images/counter-timer.png";
 
 const Home = () => {
   const [trendingProducts, setTrendingProducts] = useState([]);
@@ -26,10 +26,10 @@ const Home = () => {
 
   useEffect(() => {
     const filteredTrendingProducts = products.filter(
-      (item) => item.category === "chair"
+      (item) => item.category === "trending"
     );
     const filteredBestSalesProducts = products.filter(
-      (item) => item.category === "sofa"
+      (item) => item.category === "bests"
     );
     const filteredMobileProducts = products.filter(
       (item) => item.category === "mobile"
@@ -55,7 +55,7 @@ const Home = () => {
             <Col lg="6" md="6">
               <div className="hero__content">
                 <p className="hero__subtitle">Trending product in {year}</p>
-                <h2>Make Yout Interior More Minimalistic & Modern</h2>
+                <h2>Make Your Life More Confortable & Modern</h2>
                 <p>
                   Lorem ipsum dolor sit amet, consectetur adipisicing elit. At
                   repudiandae quo laudantium dolorem fugiat nostrum ea vel
@@ -102,7 +102,7 @@ const Home = () => {
             <Col lg="6" md="12" className="count__down-col">
               <div className="clock__top-content">
                 <h4 className="text-white fs-6 mb-2">Limited Offers</h4>
-                <h3 className="text-white fs-5 mb-3">Quality Armchair</h3>
+                <h3 className="text-white fs-5 mb-3">Iphone 12 Pro</h3>
               </div>
               <Clock />
               <motion.button

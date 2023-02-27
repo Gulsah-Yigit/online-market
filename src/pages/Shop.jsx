@@ -11,9 +11,9 @@ const Shop = () => {
 
   const handleFilter = (e) => {
     const filterValue = e.target.value;
-    if (filterValue === "sofa") {
+    if (filterValue === "bests") {
       const filteredProducts = products.filter(
-        (item) => item.category === "sofa"
+        (item) => item.category === "bests"
       );
 
       setProductsData(filteredProducts);
@@ -27,9 +27,9 @@ const Shop = () => {
       setProductsData(filteredProducts);
     }
 
-    if (filterValue === "chair") {
+    if (filterValue === "trending") {
       const filteredProducts = products.filter(
-        (item) => item.category === "chair"
+        (item) => item.category === "trending"
       );
 
       setProductsData(filteredProducts);
@@ -73,9 +73,9 @@ const Shop = () => {
               <div className="filter__widget">
                 <select onChange={handleFilter}>
                   <option>Filter By Category</option>
-                  <option value="sofa">Sofa</option>
+                  <option value="bests">bests</option>
                   <option value="mobile">Mobile</option>
-                  <option value="chair">Chair</option>
+                  <option value="trending">trending</option>
                   <option value="watch">Watch</option>
                   <option value="wireless">Wireless</option>
                 </select>
